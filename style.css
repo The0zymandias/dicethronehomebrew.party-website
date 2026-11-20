@@ -1,0 +1,114 @@
+@font-face {
+    font-family: "Myriad Pro Bold Condensed";
+    src: url("./assets/Myriad Pro Bold Condensed.ttf");
+}
+
+@font-face {
+    /* Only has capital letters for some reason */
+    font-family: PhosphateSolid;
+    src: url("./assets/PhosphateSolid.woff2");
+}
+
+html {
+    font-size: larger;
+    background-image: url("./assets/bg.png");
+    font-family: "Myriad Pro Bold Condensed";
+}
+
+header {
+    background-color: rgb(15, 15, 15);
+}
+
+body {
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+h1 {
+    text-align: center;
+    color: aliceblue;
+    font-family: PhosphateSolid;
+}
+
+p {
+    color: aliceblue;
+}
+
+a:link {
+    color: aliceblue;
+    background-color: transparent;
+}
+
+a:visited {
+    color: aliceblue;
+    background-color: transparent;
+}
+
+span {
+    color: aliceblue;
+}
+
+pre {
+    font-size: 18px;
+}
+
+tr {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+marquee p {
+    font-size: medium;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+hr {
+    color: aliceblue;
+}
+
+canvas {
+    border: 4px;
+    border-color: black;
+    border-style: groove;
+    display: block;
+    margin-inline: auto;
+    max-width: 100%;
+}
+
+#motd-text {
+    color: rgb(255,246,0);
+}
+
+#input-container {
+    margin-inline: auto;
+    display: flex;
+    justify-content: center;
+}
+
+#entergameview {
+    width: 100%;
+    text-align: center;
+}
+
+#creategametable {
+    margin-left: auto;
+    margin-right: auto;
+    border-spacing: 10px;
+
+}
+
+#creategametable .labeltext {
+    text-align: left;
+    font-size: larger;
+    color: aliceblue;
+}
+
+#gameview {
+}
+
+#pit-big-gif {
+    display: block;
+    margin-inline: auto;
+}

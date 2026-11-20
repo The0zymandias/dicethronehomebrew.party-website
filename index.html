@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>DT Tabletop</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">   
+  </head>
+  <body>
+    <header>
+      <table style="margin-inline: auto;">
+        <tr>
+          <td>
+            <img height="130" src="./assets/ganon.apng">
+          </td>
+          <td>
+            <div style="width: fit-content; margin-inline: auto;">
+              <br>
+              <h1>DICE THRONE HOMEBREW.PARTY</h1>
+              <marquee scrollamount=15 behavior=alternate><a id="motd-link" style="text-decoration: none;" href="" target="_blank"><span id="motd-text"></span></a></marquee>
+              <p style="font-size: 2px; color: rgb(15, 15, 15);">Nothing to see...</p>
+            </div>
+          </td>
+          <td>
+            <img height="130" src="./assets/ganon.apng">
+          </td>
+        </tr>
+      </table>
+
+    </header>
+    <main>
+      <br>
+      <div id="entergameview">
+        <div id="pit-big-gif"><a href="https://www.youtube.com/watch?v=5juBmmXoW7I&t=355s"><img height="200" src="./assets/pit-big.gif" alt="Server working" style="display: inline-block;"></a></div>
+        <p style="font-size: x-large;">[ Waiting for user ]</p>
+        <table id="creategametable">
+          <tbody>
+            <tr>
+              <td class="labeltext">Server</td>
+              <td>
+                <datalist id="someServerAddresses">
+                  <option value="wss://tabletop.serverbytes.stream"></option>
+                  <option value="ws://localhost:8765"></option>
+                </datalist>
+                <input id="url-input" type="url" size="30" placeholder="ws://" list="someServerAddresses" value="ws://localhost:8765" required />
+              </td>
+            </tr>
+            <tr>
+              <td class="labeltext">Room Name</td>
+              <td><input id="room-name-input" type="text" size="30" required /></td>
+            </tr>
+            <tr>
+              <td class="labeltext">Password</td>
+              <td><input id="room-password-input" type="text" size="30" required /></td>
+            </tr>
+          </tbody>
+        </table>
+        <pre><input type="button" id="host-room-button" value="Host Room" size="40" />  <input type="button" id="join-room-button" value="Join Room" size="40" /></pre>
+        <br>
+        <p>
+          <a href="https://dice-throne.rulepop.com/" target="_blank">Dice Throne Rules (Rule Pop)</a>&nbsp;&nbsp;&nbsp;<a href="https://docs.google.com/document/d/1_GJz22nkGmcEjThXgEUlb8OykrNNigs33xpSywnwTRc/edit?tab=t.0" target="_blank">Advanced Rules and Clarifications</a>
+        </p>
+        <p><a href="./faq#what-is-this">What is this website?</a></p>
+        <p><a href="./faq#creating-heros">I NEED (to make) A HERO</a></p>
+        <p><a href="./faq#creating-heros">I NEED (to find) A HERO</a></p>
+        <p><a href="./faq#installing-heros">I NEED (to install) A HERO</a></p>
+        <p><a href="./faq#managing-heros">I NEED (to manage) A HERO</a></p>
+        <p><a href="./installed-data">I NEED (to manage) A HERO My local data?</a></p>
+      </div>
+
+      <div id="gameview" hidden>
+        <canvas id="tabletop" width="1280" height="800">
+          <img src="./assets/pit-big.gif" alt="The tabletop failed to load :(">
+        </canvas>
+        <div id="input-container">
+          <input type="button"/>
+        </div>
+      </div>
+
+    </main>
+    <footer></footer>
+    <script src="motd.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
